@@ -1,0 +1,103 @@
+.bg-image{
+  height: 100%;
+  background-image: url('./assets/images/pokebg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.water,
+.fire,
+.grass,
+.ground,
+.rock,
+.steel,
+.ice,
+.electric,
+.dragon,
+.ghost,
+.psychic,
+.normal,
+.fighting,
+.poison,
+.bug,
+.flying,
+.dark,
+.fairy{
+  background-image: url('./assets/images/pokemon-types.png');
+  background-size: 172px;
+  width: 24px;
+  height: 24px;
+}
+
+.water{
+  background-position: -10px -10px;
+}
+
+.fire{
+  background-position: -34px -10px;
+}
+
+.grass{
+  background-position: -60px -10px;
+}
+
+.ground{
+  background-position: -84px -10px;
+}
+
+.rock{
+  background-position: -112px -10px;
+}
+
+.steel{
+  background-position: -138px -10px;
+}
+
+.ice{
+  background-position: -10px -45px;
+}
+
+.electric{
+  background-position: -34px -45px;
+}
+
+.dragon{
+  background-position: -60px -45px;
+}
+
+.ghost{
+  background-position: -84px -45px;
+}
+
+.psychic{
+  background-position: -112px -45px;
+}
+
+.normal{
+  background-position: -138px -45px;
+}
+
+.fighting{
+  background-position: -10px -81px;
+}
+
+.poison{
+  background-position: -34px -81px;
+}
+
+.bug{
+  background-position: -60px -81px;
+}
+
+.flying{
+  background-position: -84px -81px;
+}
+
+.dark{
+  background-position: -112px -81px;
+}
+
+.fairy{
+  background-position: -138px -81px;
+}
