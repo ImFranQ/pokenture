@@ -61,7 +61,7 @@ const Navbar = (props: NavbarProps) => {
 
       </Flex>
       
-      {!isOpen ? (
+      {isOpen ? (
         <Box pb={4} display={{ md: 'none' }}>
           <Stack as={'nav'} spacing={4}>
             {links.map(({ to, text }) => <Link {...{ to }} as={RouterLink}>{text}</Link>)}
