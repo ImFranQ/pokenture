@@ -57,6 +57,7 @@ export const useFindPokemon = (name: string) => {
       console.log('wat');
       
       setData(res)
+      setHasError(false)
     } catch (err) {
       setHasError(true)
       setData(null)

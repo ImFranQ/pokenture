@@ -25,7 +25,7 @@ const Navbar = (props: NavbarProps) => {
   ]
 
   const searchHandler = (term:string) => {
-    navigate(`/pokemon/${term}`)
+    navigate(`/pokemon/${term.toLowerCase()}`)
   }
 
   return (
