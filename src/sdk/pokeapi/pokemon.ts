@@ -48,20 +48,25 @@ export const usePokemonList = (limit: number) => {
 export const useFindPokemon = (name: string) => {
   const [data, setData] = useState<any | null>(null)
   const [isLoading, setIsloading] = useState(false)
+  const [hasError, setHasError] = useState(false)
 
   const loadData = async () => {
     setIsloading(true)
     try {
       const res = await (await fetch(`${apiurl}pokemon/${name}`)).json()
+      console.log('wat');
+      
       setData(res)
     } catch (err) {
+      setHasError(true)
+      setData(null)
     }
     setIsloading(false)
   }
 
   useEffect(() => {
     loadData()
-  }, [])
+  }, [name])
 
-  return {data, isLoading}
+  return {data, isLoading, hasError}
 }

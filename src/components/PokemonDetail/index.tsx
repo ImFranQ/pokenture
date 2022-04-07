@@ -9,6 +9,7 @@ const PokemonDetail = ({data}: PokemonDetailComponentProps) => {
         borderRadius={10}
         borderColor={'gray.700'}
         borderWidth={1}
+        p={6}
       >
         <Flex alignItems={'center'} flexDir={'column'} px={16}>
           <Flex>

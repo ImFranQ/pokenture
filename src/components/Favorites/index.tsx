@@ -22,8 +22,8 @@ const Favorites = () => {
         <Text fontSize={'xl'} mb={4} color={'primary.500'}>TOP FAVORITES POKEMON</Text>
       </Box>
       <Flex flexWrap={'wrap'} justifyContent="center" gap={6}>
-        {items.map(({ content }): any => (
-          <Box w={{ base: '100%', md: '50%', lg: '23%'}} maxW={'400px'} mb={6}>
+        {items.map(({ content }, index): any => (
+          <Box key={index} w={{ base: '100%', md: '50%', lg: '23%'}} maxW={'400px'} mb={6}>
             {content}
           </Box>
         ))}

@@ -32,8 +32,9 @@ const EvolutionInfo = () => {
       </Text>
 
       <Flex flexWrap={'wrap'} justifyContent="center" gap={6}>
-        {items.map(({ icon, info }) => (
+        {items.map(({ icon, info }, index) => (
           <Box 
+            key={index}
             borderRadius={10} 
             borderWidth={1} 
             borderColor={'gray.700'} 

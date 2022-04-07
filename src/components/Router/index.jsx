@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import Pokemon from "../../pages/Pokemon";
 
 import Pokemons from "../../pages/Pokemons";
 import Welcome from "../../pages/Welcome";
-import PokemonDetail from "../PokemonDetail";
 
 import Template from "../Template";
 
@@ -12,6 +12,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/pokemons" element={<Pokemons />} />
+        <Route path="/pokemon/:name" element={<Pokemon />} />
       </Routes>
     </Template>
   )
