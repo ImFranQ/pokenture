@@ -1,6 +1,7 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
-import Avatar from "../Avatar";
-import { PokemonDetailComponentProps } from "./types";
+import React from 'react';
+import {Box, Flex, Text} from '@chakra-ui/react';
+import Avatar from '../Avatar';
+import {PokemonDetailComponentProps} from './types';
 
 const PokemonDetail = ({data}: PokemonDetailComponentProps) => {
   return (
@@ -20,16 +21,22 @@ const PokemonDetail = ({data}: PokemonDetailComponentProps) => {
               <Avatar image={data?.sprites.front_shiny} />
             </Box>
           </Flex>
-          <Text fontSize={'xl'} mb={1} textTransform={'uppercase'}>{data?.name} ({data.id})</Text>
+          <Text fontSize={'xl'} mb={1} textTransform={'uppercase'}>
+            {data?.name} ({data.id})
+          </Text>
           <Flex>
             {data?.types.map((type: any, index:number) => (
-              <Box key={index} className={type.type.name} title={type.type.name} mx={1}></Box>
+              <Box key={index}
+                className={type.type.name}
+                title={type.type.name}
+                mx={1}
+              />
             ))}
           </Flex>
         </Flex>
       </Box>
     </>
-  )
-}
+  );
+};
 
 export default PokemonDetail;

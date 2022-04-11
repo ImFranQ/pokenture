@@ -1,7 +1,8 @@
-import { Box, Flex } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import React from 'react';
+import {Box, Flex} from '@chakra-ui/react';
+import {ReactNode} from 'react';
 
-import Navbar from "../Navbar";
+import Navbar from '../Navbar';
 
 export interface TemplateProps {
   children: ReactNode
@@ -17,7 +18,7 @@ const Template = (props: TemplateProps) => {
         {props.children}
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default Template
+export default Template;

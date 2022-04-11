@@ -1,4 +1,5 @@
-import { Flex, Text } from "@chakra-ui/react"
+import React from 'react';
+import {Flex, Text} from '@chakra-ui/react';
 
 const NotFoundMessage = () => {
   return (
@@ -7,7 +8,7 @@ const NotFoundMessage = () => {
         <Text fontSize={'3xl'}>Error: Not found</Text>
       </Flex>
     </>
-  )
-}
+  );
+};
 
-export default NotFoundMessage
+export default NotFoundMessage;

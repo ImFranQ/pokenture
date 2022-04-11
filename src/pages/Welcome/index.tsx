@@ -1,9 +1,10 @@
-import { Box, Container, Button, Flex } from "@chakra-ui/react"
-import { Link as RouterLink } from "react-router-dom"
+import React from 'react';
+import {Box, Container, Button, Flex} from '@chakra-ui/react';
+import {Link as RouterLink} from 'react-router-dom';
 
-import Header from "../../components/Header"
-import Favorites from "../../components/Favorites";
-import EvolutionInfo from "../../components/EvolutionInfo";
+import Header from '../../components/Header';
+import Favorites from '../../components/Favorites';
+import EvolutionInfo from '../../components/EvolutionInfo';
 
 const Welcome = () => {
   return (
@@ -20,7 +21,7 @@ const Welcome = () => {
         <EvolutionInfo />
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;
